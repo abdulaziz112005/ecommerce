@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{% block title %} aziz {% endblock %}</title>
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/slick.css' %}">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'css/media.css' %}">
+</head>
+<body>
+
+	<div class="container moref">
+		<header>
+			<div class="support">
+				<img src="{% static 'img/support.svg' %}" alt="">
+				<div class="support_t">
+					Служба поддержка
+					<span>71 123 45 67</span>
+				</div>
+			</div>
+			<img src="{% static 'img/logo.png' %}" alt="" class="logo">
+			<div class="btns">
+				<a href="#" class="cart">
+
+					<div class="cart_t">
+						Корзина
+						<span>1 200 000 сум</span>
+               </div>
+               <span class="cart_c">2</span>
+					<img src="{% static 'img/cart.svg' %}" alt="">
+				</a>
+				<a href="#" class="fav">
+					<img src="{% static 'img/fav.svg' %}" alt="">
+				</a>
+				<a href="#" class="user">
+					<img src="{% static 'img/user.svg' %}" alt="">
+				</a>
+			</div>
+		</header>
+	</div>
+	<div class="container moref">
+		<nav class="navbar">
+			<button class="catb">
+				<img src="{% static 'img/menu.svg' %}" alt="">
+				Каталог
+			</button>
+			<ul>
+				<li><a href="#">Помолвка и свадьба</a></li>
+				<li><a href="#">ЮВЕЛИРНЫЕ ИЗДЕЛИЯ</a></li>
+				<li><a href="#">КОЛЛЕКЦИИ</a></li>
+				<li><a href="#">БРИЛЛИАНТЫ</a></li>
+				<li><a href="#">ЧАСЫ</a></li>
+				<li><a href="#">ПОДАРКИ</a></li>
+			</ul>
+			<button class="search">
+				Поиск <img src="{% static 'img/search.svg' %}" alt="">
+			</button>
+		</nav>
+   </div>
+   <div class="container pos">
+      <div class="catb_list">
+         <div class="catb_item">
+            <a href="#" class="catb_img" style="background-image: url({% static 'img/slider.jpg' %});"></a>
+            <a href="#" class="catb_title">Помолвка и свадьба</a>
+         </div>
+         <div class="catb_item">
+            <a href="#" class="catb_img" style="background-image: url({% static 'img/slider.jpg' %});"></a>
+            <a href="#" class="catb_title">Помолвка и свадьба</a>
+         </div>
+         <div class="catb_item">
+            <a href="#" class="catb_img" style="background-image: url({% static 'img/slider.jpg' %});"></a>
+            <a href="#" class="catb_title">Помолвка и свадьба</a>
+         </div>
+         <div class="catb_item">
+            <a href="#" class="catb_img" style="background-image: url({% static 'img/slider.jpg' %});"></a>
+            <a href="#" class="catb_title">Помолвка и свадьба</a>
+         </div>
+         <div class="catb_item">
+            <a href="#" class="catb_img" style="background-image: url({% static 'img/slider.jpg' %});"></a>
+            <a href="#" class="catb_title">Помолвка и свадьба</a>
+         </div>
+      </div>
+      <div class="search_box">
+         <form action="">
+            <input type="text" placeholder="Поиск">
+            <button type="submit"><img src="{% static 'img/search.svg' %}" alt=""></button>
+         </form>
+      </div>
+   </div>
+	{% block content %}  {% endblock %}
+   <footer>
+      <div class="top">
+         <div class="container">
+            <div class="top_item">
+               <span>ОБРАТНАЯ СВЯЗЬ</span>
+               <ul>
+                  <li><a href="#">Вопросы и ответы </a></li>
+                  <li><a href="#">Вопросы и ответы </a></li>
+                  <li><a href="#">Вопросы и ответы </a></li>
+                  <li><a href="#">Вопросы и ответы </a></li>
+               </ul>
+            </div>
+            <div class="top_item">
+               <span>ОБРАТНАЯ СВЯЗЬ</span>
+               <ul>
+                  <li><a href="#">Вопросы и ответы </a></li>
+                  <li><a href="#">Вопросы и ответы </a></li>
+                  <li><a href="#">Вопросы и ответы </a></li>
+                  <li><a href="#">Вопросы и ответы </a></li>
+               </ul>
+            </div>
+            <div class="top_item">
+               <span>ОБРАТНАЯ СВЯЗЬ</span>
+               <ul>
+                  <li><a href="#">Вопросы и ответы </a></li>
+                  <li><a href="#">Вопросы и ответы </a></li>
+                  <li><a href="#">Вопросы и ответы </a></li>
+                  <li><a href="#">Вопросы и ответы </a></li>
+               </ul>
+            </div>
+            <div class="top_item social">
+               <span>МЫ В СОЦИАЛЬНЫХ СЕТЯХ</span>
+               <a href="#"><img src="{% static 'img/089-telegram.png' %}" alt=""></a>
+               <a href="#"><img src="{% static 'img/024-facebook.png' %}" alt=""></a>
+               <a href="#"><img src="{% static 'img/044-instagram.png' %}" alt=""></a>
+               <br>
+               Бесплатный звонок
+               <span class="phone">+998 71 123 45 67</span>
+            </div>
+            <div class="top_item">
+               <span>СПОСОБЫ ОПЛАТЫ</span>
+               <img src="{% static 'img/humo 1.jpg' %}" alt="">
+               <img src="{% static 'img/uzcard.jpg' %}" alt="">
+               <img src="{% static 'img/visa.jpg' %}" alt="">
+
+            </div>
+         </div>
+      </div>
+      <div class="bottom">
+         <div class="container">
+            <div class="copyright">
+               © 2020. SUMA-JEWELLRY
+            </div>
+            <div class="author">
+               Разработка сайтов Tuitsoft.uz
+            </div>
+         </div>
+      </div>
+   </footer>
+
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<script src="{% static 'js/slick.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>
