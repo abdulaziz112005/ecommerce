@@ -7,5 +7,9 @@ def blog(request):
     return render(request, 'blog/blog.html', context)
 
 def blog_info(request, id):
-
-    return render(request, 'blog/blog_view.html')
+    try:
+        view = Blog.objects.get(pk=id)
+    except Blog.DoesNotExist:
+        view = None
+    context= {"view": view}
+    return render(request, 'blog/blog_view.html', context)

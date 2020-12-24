@@ -19,11 +19,11 @@
                {% for blog in blogs %}
                <div class="col-lg-4 col-md-6">
                    <div class="blog_box">
-                       <a href="{% url 'blog:views' %}" class="blog_img">
+                       <a href="{% url 'blog:info' blog.id %}" class="blog_img">
                            <img src="{{ blog.photo.url }}" alt="">
                        </a>
                        <div class="blog_date">{{ blog.created_at }}</div>
-                       <a href="{% url 'blog:views' %}" style="flex-direction: column;" class="blog_title">{{ blog.info }}</a>
+                       <a href="{% url 'blog:info' blog.id %}" class="blog_title">{{ blog.info }}</a>
                    </div>
                </div>
                {% endfor %}
