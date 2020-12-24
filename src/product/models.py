@@ -6,7 +6,7 @@ class Product(models.Model):
     product_code = models.CharField(max_length=200, unique=True)
     info = models.TextField(max_length=400)
     warranty = models.TextField(max_length=200)
-    view_count = models.IntegerField(default=0, blank=True)
+    view_count = models.IntegerField(default=0, blank=True,editable=False)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     brend = models.ForeignKey(Brend, on_delete=models.SET_NULL, null=True)
     model = models.ForeignKey(Model, on_delete=models.SET_NULL, null=True)
