@@ -6,3 +6,6 @@ def blog(request):
     context = {'blogs': blogs}
     return render(request, 'blog/blog.html', context)
 
+def blog_info(request, id):
+
+    return render(request, 'blog/blog_view.html')
