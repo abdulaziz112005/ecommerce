@@ -1,0 +1,205 @@
+{% extends "layout.html" %}
+{% block title %} Blog {% endblock %}
+{% block content %}
+{% load static %}
+	<div class="head">
+        <div class="container pos">
+            <div class="head_caption full">
+                <h1>В Ташкенте впервые пройдёт ювелирная выставка</h1>
+                
+            </div>
+        </div>
+        
+    </div>
+	<div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Помолвка и свадьба</a></li>
+                <li>Золотое кольцо с фианитом</li>
+            </ul>
+        </div>
+    </div>
+   	<div class="wrapper">
+       	<div class="container">
+            <div class="product">
+                <div class="product_gal">
+                    <div class="product_gal-pict">
+                     	<a href="#" style="background-image: url({% static 'img/bigring.jpg' %})"></a>
+                     	<a href="#" style="background-image: url({% static 'img/bigring.jpg' %})"></a>
+                     	<a href="#" style="background-image: url({% static 'img/bigring.jpg' %})"></a>
+                     	<a href="#" style="background-image: url({% static 'img/bigring.jpg' %})"></a>
+                     	<a href="#" style="background-image: url({% static 'img/bigring.jpg' %})"></a>
+                    </div>
+                  	<div class="product_gal-nav">
+                     	<div class="product_gal-list">
+                        	<div class="item" style="background-image: url({% static 'img/bigring.jpg' %})"></div>
+                        	<div class="item" style="background-image: url({% static 'img/bigring.jpg' %})"></div>
+                        	<div class="item" style="background-image: url({% static 'img/bigring.jpg' %})"></div>
+                        	<div class="item" style="background-image: url({% static 'img/bigring.jpg' %})"></div>
+                        	<div class="item" style="background-image: url({% static 'img/bigring.jpg' %})"></div>
+                     	</div>
+                  	</div>
+                  
+               	</div>
+               	<div class="product_info">
+                  	<div class="product_articul">Артикул: <b>{{ product.product_code}}</b></div>
+                  	<div class="product_title">{{ product.name }} </div>
+                  	<div class="product_price">
+                     	<b>920 000</b> сум
+                     	<div class="old">
+                        	1 220 000 сум
+                     	</div>
+                  	</div>
+                  	<div class="product_size">
+                     	<span>Размер:</span>
+                     	<div class="product_size_list">
+	                        <a href="#">15</a>
+	                        <a href="#" class="active">15.5</a>
+	                        <a href="#">16</a>
+	                        <a href="#">16.5</a>
+	                        <a href="#">16.5</a>
+	                        <a href="#">16.5</a>
+                     	</div>
+                  	</div>
+                  	<div class="product_btns">
+                     	<button class="tocart">Добавить в корзину</button>
+                     	<button class="payone">Купить в один клик</button>
+                  	</div>
+                  	<div class="product_fav">
+                     	<button class="fav"><img src="{% static 'img/fav2.svg' %}" alt=""> Сохранить</button>
+                     	<button class="share"><img src="{% static 'img/share.svg' %}" alt=""> Поделиться</button>
+                  	</div>
+                  	<span class="btitle">Описание</span>
+                  	<p>
+                  		Бренд: <a href="#">{{ product.brend.name }}</a> <br> 
+                   		{{ product.info }}
+                   	</p>
+                  	<span class="btitle">Гарантия</span>
+                  	<p>{{ product.warranty }}</p>   
+               </div>
+           </div>
+           <a href="#" class="bmore">Может понравиться </a>
+           	<div class="products list">
+	            <div class="row">
+	               	<div class="products_item">
+	                  	<div class="products_box">
+	                     	<span class="saleinfo">10%</span>
+	                     	<button class="products_box-fav"><img src="{% static 'img/bfav.svg' %}" alt=""></button>
+	                     	<div class="products_box-img">
+	                        	<img src="{% static 'img/ring.jpg' %}" alt="">
+	                     	</div>
+	                    	<button class="tocart">+</button>
+	                     	<div class="products_box-info">
+	                        	<div class="products_box-cat">Кольца</div>
+	                        		<a href="#">Золотое кольцо SOKOLOV с фианитом</a>
+	                        	<div class="products_box-price"><img src="{% static 'img/money.svg' %}" alt=""> 980 000 сум</div>
+	                     	</div>
+	                  	</div>
+	               	</div>
+	               	<div class="products_item">
+	                  	<div class="products_box">
+	                     	<span class="saleinfo">10%</span>
+	                     	<button class="products_box-fav"><img src="{% static 'img/bfav.svg' %}" alt=""></button>
+	                     	<div class="products_box-img">
+	                        	<img src="{% static 'img/ring.jpg' %}" alt="">
+	                     	</div>
+	                    	<button class="tocart">+</button>
+	                     	<div class="products_box-info">
+	                        	<div class="products_box-cat">Кольца</div>
+	                        		<a href="#">Золотое кольцо SOKOLOV с фианитом</a>
+	                        	<div class="products_box-price"><img src="{% static 'img/money.svg' %}" alt=""> 980 000 сум</div>
+	                     	</div>
+	                  	</div>
+	               	</div>
+	               	<div class="products_item">
+	                  	<div class="products_box">
+	                     	<span class="saleinfo">10%</span>
+	                     	<button class="products_box-fav"><img src="{% static 'img/bfav.svg' %}" alt=""></button>
+	                     	<div class="products_box-img">
+	                        	<img src="{% static 'img/ring.jpg' %}" alt="">
+	                     	</div>
+	                    	<button class="tocart">+</button>
+	                     	<div class="products_box-info">
+	                        	<div class="products_box-cat">Кольца</div>
+	                        		<a href="#">Золотое кольцо SOKOLOV с фианитом</a>
+	                        	<div class="products_box-price"><img src="{% static 'img/money.svg' %}" alt=""> 980 000 сум</div>
+	                     	</div>
+	                  	</div>
+	               	</div>
+	               	<div class="products_item">
+	                  	<div class="products_box">
+	                     	<span class="saleinfo">10%</span>
+	                     	<button class="products_box-fav"><img src="{% static 'img/bfav.svg' %}" alt=""></button>
+	                     	<div class="products_box-img">
+	                        	<img src="{% static 'img/ring.jpg' %}" alt="">
+	                     	</div>
+	                    	<button class="tocart">+</button>
+	                     	<div class="products_box-info">
+	                        	<div class="products_box-cat">Кольца</div>
+	                        		<a href="#">Золотое кольцо SOKOLOV с фианитом</a>
+	                        	<div class="products_box-price"><img src="{% static 'img/money.svg' %}" alt=""> 980 000 сум</div>
+	                     	</div>
+	                  	</div>
+	               	</div>
+	            </div>
+          	</div>
+           
+       	</div>
+   	</div>
+   	<div class="quote">
+      <div class="container">
+         <div class="quote_title">Отзывы</div>
+         <div class="quote_list">
+            <div class="quote_item">
+               <p>Провожу отпуск в Ташкенте,сегодня зашла в ваш магазин, приобрела серёжки, хочу выразить благодарность за отличную консультацию девушки продавца, к сожалению имя не запомнила. Спасибо за её внимательность и терпение, я очень долго не могла определиться с выбором!</p>
+               <div class="quote_rate">
+                  <img src="{% static 'img/star.svg' %}" alt="">
+                  <img src="{% static 'img/star.svg' %}" alt="">
+                  <img src="{% static 'img/star.svg' %}" alt="">
+                  <img src="{% static 'img/star.svg' %}" alt="">
+                  <img src="{% static 'img/star.svg' %}" alt="">
+               </div>
+               <div class="quote_date">03 сентября 2020 </div>
+               <div class="quote_who">Светлана Мошникова </div>
+            </div>
+            <div class="quote_item">
+               <p>Провожу отпуск в Ташкенте,сегодня зашла в ваш магазин, приобрела серёжки, хочу выразить благодарность за отличную консультацию девушки продавца, к сожалению имя не запомнила. Спасибо за её внимательность и терпение, я очень долго не могла определиться с выбором!</p>
+               <div class="quote_rate">
+                  <img src="{% static 'img/star.svg' %}" alt="">
+                  <img src="{% static 'img/star.svg' %}" alt="">
+                  <img src="{% static 'img/star.svg' %}" alt="">
+                  <img src="{% static 'img/star.svg' %}" alt="">
+                  <img src="{% static 'img/star.svg' %}" alt="">
+               </div>
+               <div class="quote_date">03 сентября 2020 </div>
+               <div class="quote_who">Светлана Мошникова </div>
+            </div>
+            <div class="quote_item">
+               <p>Провожу отпуск в Ташкенте,сегодня зашла в ваш магазин, приобрела серёжки, хочу выразить благодарность за отличную консультацию девушки продавца, к сожалению имя не запомнила. Спасибо за её внимательность и терпение, я очень долго не могла определиться с выбором!</p>
+               <div class="quote_rate">
+                  <img src="{% static 'img/star.svg' %}" alt="">
+                  <img src="{% static 'img/star.svg' %}" alt="">
+                  <img src="{% static 'img/star.svg' %}" alt="">
+                  <img src="{% static 'img/star.svg' %}" alt="">
+                  <img src="{% static 'img/star.svg' %}" alt="">
+               </div>
+               <div class="quote_date">03 сентября 2020 </div>
+               <div class="quote_who">Светлана Мошникова </div> 
+            </div>
+            <div class="quote_item">
+               <p>Провожу отпуск в Ташкенте,сегодня зашла в ваш магазин, приобрела серёжки, хочу выразить благодарность за отличную консультацию девушки продавца, к сожалению имя не запомнила. Спасибо за её внимательность и терпение, я очень долго не могла определиться с выбором!</p>
+               <div class="quote_rate">
+                  <img src="{% static 'img/star.svg' %}" alt="">
+                  <img src="{% static 'img/star.svg' %}" alt="">
+                  <img src="{% static 'img/star.svg' %}" alt="">
+                  <img src="{% static 'img/star.svg' %}" alt="">
+                  <img src="{% static 'img/star.svg' %}" alt="">
+               </div>
+               <div class="quote_date">03 сентября 2020 </div>
+               <div class="quote_who">Светлана Мошникова </div>
+            </div>
+         </div>
+      </div>
+   	</div>
+{% endblock %}
