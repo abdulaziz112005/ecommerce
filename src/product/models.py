@@ -8,8 +8,8 @@ class Product(models.Model):
     warranty = models.TextField(max_length=200)
     view_count = models.IntegerField(default=0, blank=True,editable=False)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
-    brend = models.ForeignKey(Brend, on_delete=models.SET_NULL, null=True)
-    model = models.ForeignKey(Model, on_delete=models.SET_NULL, null=True)
+    brend = models.ForeignKey(Brend, on_delete=models.SET_NULL, null=True,blank=True)
+    model = models.ForeignKey(Model, on_delete=models.SET_NULL, null=True,blank=True)
     created_at = models.DateTimeField(auto_now_add=True, blank=True)
     updated_at = models.DateTimeField(auto_now=True, blank=True, editable=False)
 
